@@ -57,8 +57,8 @@ public class CategoryController {
         return categoryRepository.findByName(name);
     }
 
-    @GetMapping("/search-speciality")
-    public List<Category> getCategoriesByCollection(@RequestParam final String specialityName) {
-        return searchService.findCategoryByCollection(specialityName);
+    @GetMapping("/search-collection")
+    public List<Category> getCategoriesByCollection(@RequestParam final String collectionName) {
+        return searchService.findCategoryByCollection(collectionName);
     }
 }
